@@ -567,117 +567,238 @@
         }
 
         /* Responsive */
-        @media (max-width: 480px) {
+        /* Mevcut responsive bölümünü şununla değiştirin: */
+
+        @media (max-width: 768px) {
             .container {
-                padding: 0 8px;
-            }
-
-            .section-title {
-                font-size: 1.6rem;
-                margin-bottom: 28px;
-            }
-
-            .card {
-                padding: 14px;
-                border-radius: 14px;
+                padding: 0 20px;
+                /* 6px yerine 20px */
             }
 
             .cards-grid {
                 grid-template-columns: 1fr;
-                gap: 22px;
+                gap: 25px;
+                /* 18px yerine 25px */
+            }
+
+            .card {
+                padding: 25px;
+                /* 18px yerine 25px */
+                margin: 0 5px;
+                /* Yanlarda biraz boşluk */
+            }
+
+            .section {
+                padding: 60px 0;
+                /* 48px yerine 60px */
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+                /* 2.1rem yerine 2.5rem */
+                margin-bottom: 50px;
+                /* 40px yerine 50px */
+            }
+
+            .header {
+                padding: 20px 0;
+                /* Header'a padding ekle */
+            }
+
+            .name {
+                font-size: clamp(2.5rem, 8vw, 4rem);
+                /* Daha büyük font */
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+                margin-bottom: 2.5rem;
+                padding: 0 10px;
+                /* Yanlarda padding */
+            }
+
+            .cta-button {
+                padding: 18px 35px;
+                /* Daha büyük buton */
+                font-size: 1.1rem;
             }
 
             .modal-content {
-                width: 98vw;
-                max-width: 98vw;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%) scale(1);
-                box-sizing: border-box;
-                border-radius: 14px;
+                width: 95vw;
+                /* 98vw yerine 95vw */
+                margin: 10px;
+                max-height: 85vh;
             }
 
             .modal-header,
             .modal-body {
-                padding: 10px;
+                padding: 20px;
+                /* 12px yerine 20px */
             }
 
-            .project-images {
-                grid-template-columns: 1fr;
-                gap: 10px;
+            .modal-title {
+                font-size: 2rem;
             }
 
-            .project-image {
-                max-width: 98vw;
-                max-height: 180px;
-                border-radius: 12px;
+            .card-title {
+                font-size: 1.4rem;
+                /* Daha büyük başlıklar */
             }
 
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 18px;
-            }
-
-            .contact-item {
-                padding: 18px;
-                border-radius: 12px;
-            }
-
-            .section {
-                padding: 18px 0;
+            .card-description {
+                font-size: 0.95rem;
+                line-height: 1.6;
             }
         }
 
         @media (max-width: 480px) {
-    .container {
-        padding: 0 8px;
-    }
-    .section-title {
-        font-size: 1.6rem;
-        margin-bottom: 28px;
-    }
-    .card {
-        padding: 14px;
-        border-radius: 14px;
-    }
-    .cards-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
-    .modal-content {
-        width: 98vw;
-        max-width: 98vw;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        box-sizing: border-box;
-        border-radius: 14px;
-    }
-    .modal-header,
-    .modal-body {
-        padding: 10px;
-    }
-    .project-images {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .project-image {
-        max-width: 98vw;
-        max-height: 180px;
-        border-radius: 12px;
-    }
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-    .contact-item {
-        padding: 18px;
-        border-radius: 12px;
-    }
-    .section {
-        padding: 18px 0;
-    }
-}
+            .container {
+                padding: 0 15px;
+                /* 2px yerine 15px */
+            }
+
+            .section-title {
+                font-size: 2rem;
+                /* 1.4rem yerine 2rem */
+                margin-bottom: 40px;
+                /* 24px yerine 40px */
+            }
+
+            .card {
+                padding: 20px;
+                /* 8px yerine 20px */
+                margin: 0 5px;
+            }
+
+            .section {
+                padding: 50px 0;
+                /* 24px yerine 50px */
+            }
+
+            .modal-content {
+                width: 92vw;
+                margin: 15px;
+            }
+
+            .modal-header,
+            .modal-body {
+                padding: 15px;
+                /* 6px yerine 15px */
+            }
+
+            .name {
+                font-size: clamp(2rem, 10vw, 3.5rem);
+                margin-bottom: 1.5rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+                padding: 0 15px;
+            }
+
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1rem;
+            }
+
+            /* Kart içerikleri için daha iyi spacing */
+            .card-title {
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+
+            .card-subtitle {
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+
+            .card-date {
+                font-size: 0.85rem;
+                margin-bottom: 15px;
+            }
+
+            .card-description {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .card-description ul {
+                margin-top: 12px;
+                padding-left: 18px;
+            }
+
+            .card-description li {
+                margin-bottom: 6px;
+            }
+        }
+
+        /* Ekstra küçük ekranlar için */
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 12px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+        }
+
+        /* İyileştirmeler */
+        .card-description ul {
+            list-style-type: none;
+            position: relative;
+        }
+
+        .card-description li {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card-description li:before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Modal için iyileştirmeler */
+        @media (max-width: 768px) {
+            .project-images {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .tech-stack {
+                gap: 10px;
+            }
+
+            .tech-tag {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+
+            .project-details {
+                padding: 20px;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+
+            .contact-item {
+                padding: 25px 15px;
+            }
+        }
     </style>
 </head>
 
